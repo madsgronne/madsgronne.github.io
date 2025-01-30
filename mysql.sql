@@ -1,0 +1,9 @@
+CREATE DATABASE valuta;
+
+USE valuta;
+
+CREATE TABLE transaktioner (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    beløb DECIMAL(10, 2),
+    dato TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
